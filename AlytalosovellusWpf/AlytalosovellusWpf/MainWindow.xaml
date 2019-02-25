@@ -1,0 +1,38 @@
+﻿<Window x:Class="AlytalosovellusWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlytalosovellusWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="339*"/>
+            <RowDefinition Height="80*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="BtnOlohuoneValotOff" Content="OFF" HorizontalAlignment="Left" Margin="38,9.619,0,0" VerticalAlignment="Top" Width="116" Height="37" Click="BtnOlohuoneValotOff_Click" Grid.Row="1"/>
+        <TextBox x:Name="txtOlohuoneenValot" TextWrapping="Wrap" Margin="38,245,517,57.381" />
+        <Button x:Name="BtnOlohuoneHamara" Content="HÄMÄRÄ" HorizontalAlignment="Left" Margin="159,9.619,0,0" VerticalAlignment="Top" Width="116" Height="37" Grid.Row="1" Click="BtnOlohuoneHamara_Click"/>
+        <Button x:Name="BtnOlohuonePuolivalot" Content="PUOLIVALOT" HorizontalAlignment="Left" Margin="159,298,0,0" VerticalAlignment="Top" Width="116" Height="37" Click="BtnOlohuonePuolivalot_Click"/>
+        <Button x:Name="BtnOlohuoneKirkas" Content="KIRKAS" HorizontalAlignment="Left" Margin="38,298,0,0" VerticalAlignment="Top" Width="116" Height="37" Click="BtnOlohuoneKirkas_Click"/>
+        <TextBox x:Name="txtKeittionValot" HorizontalAlignment="Left" Height="37" Margin="38,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <Button x:Name="BtnKeittioKirkas" Content="KIRKAS" HorizontalAlignment="Left" Margin="38,87,0,0" VerticalAlignment="Top" Width="116" Height="37" Click="BtnKeittioKirkas_Click"/>
+        <Button x:Name="BtnKeittioPuolivalot" Content="PUOLIVALOT" HorizontalAlignment="Left" Margin="159,87,0,0" VerticalAlignment="Top" Width="116" Height="37" Click="BtnKeittioPuolivalot_Click"/>
+        <Button x:Name="BtnKeittioValotOff" Content="OFF" HorizontalAlignment="Left" Margin="38,139,0,0" VerticalAlignment="Top" Width="116" Height="34" Click="BtnKeittioValotOff_Click"/>
+        <Button x:Name="BtnKeittioHamara" Content="HÄMÄRÄ" HorizontalAlignment="Left" Margin="159,139,0,0" VerticalAlignment="Top" Width="116" Height="34" Click="BtnKeittioHamara_Click"/>
+        <Label x:Name="lblKeittioValot" Content="Keittiön Valot" HorizontalAlignment="Left" Margin="88,0,0,0" VerticalAlignment="Top" Height="60" Width="237" FontSize="20"/>
+        <Label x:Name="lblOlohuoneenValot" Content="Olohuoneen Valot" HorizontalAlignment="Left" Margin="64,206,0,0" VerticalAlignment="Top" Height="92" Width="261" FontSize="20"/>
+        <TextBox x:Name="txtSauna" HorizontalAlignment="Left" Height="37" Margin="313,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+        <Button x:Name="BtnSaunaOn" Content="PÄÄLLE" HorizontalAlignment="Left" Margin="313,87,0,0" VerticalAlignment="Top" Width="135" Height="37" Click="BtnSaunaOn_Click"/>
+        <Button x:Name="BtnSaunaOff" Content="POIS" HorizontalAlignment="Left" Margin="313,139,0,0" VerticalAlignment="Top" Width="135" Height="34" Click="BtnSaunaOff_Click"/>
+        <Label x:Name="lblSauna" Content="Sauna" HorizontalAlignment="Left" Margin="348,0,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="txtTavoiteLampotila" HorizontalAlignment="Left" Height="37" Margin="348,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Grid.RowSpan="2"/>
+        <TextBox x:Name="txtTamanhetkinenLampotila" HorizontalAlignment="Left" Height="37" Margin="480,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Grid.RowSpan="2"/>
+        <Label x:Name="lblTamanhetkinenLampotila" Content="Tämänhetkinen Lämpötila" HorizontalAlignment="Left" Margin="470,290,0,0" VerticalAlignment="Top" Width="152" Height="39" FontSize="10"/>
+        <Label x:Name="lblTavoiteLampotila" Content="Tavoite Lämpötila" HorizontalAlignment="Left" Margin="348,290,0,0" VerticalAlignment="Top" FontSize="10" Width="100"/>
+        <Button x:Name="BtnLampotilaAseta" Content="ASETA" HorizontalAlignment="Left" Margin="408,246,0,0" VerticalAlignment="Top" Width="120" Height="36" Click="BtnLampotilaAseta_Click"/>
+        <Label x:Name="lblTermostaatti" Content="Termostaatti" HorizontalAlignment="Left" Margin="408,206,0,0" VerticalAlignment="Top" FontSize="20" Width="172"/>
+
+    </Grid>
+</Window>
